@@ -10,7 +10,7 @@ for (let i = 1; i <= 10; i++) {
     tableTitle.innerText = `Tabuada do ${i}`
     tablediv.appendChild(tableTitle)
     div.appendChild(tablediv)
-    for (let j = 1; j <= 10; j++) {
+    for (let j = 1; j <=10; j++) {
         const tableRow = document.createElement('p')
         tableRow.innerText = `${i} * ${j} = ${mult(i, j)}`
         tablediv.appendChild(tableRow)
