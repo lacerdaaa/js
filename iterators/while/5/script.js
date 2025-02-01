@@ -2,16 +2,14 @@
 // correta e, caso não esteja, solicite novamente a senha. Se a senha entrada for a correta, deverá ser
 // apresentada a mensagem “Senha Correta”, caso contrário, “Senha Incorreta”. 
 
-let password;
-let accepted;
+let password = prompt("Crie uma senha de 4 números inteiros");
 
+let checkpassword;
 do {
-    accepted=false
-    password = prompt("Defina uma senha de quatro digitos:")
-
-    if (password.length > 4 || password.length < 4) {
-        alert("A senha deve ter quatro digitos.")
-        accepted = true
+    checkpassword = prompt("Digite a senha de 4 números inteiros que você criou");
+    if (checkpassword !== password) {
+        alert("Senha Incorreta");
     }
+} while (checkpassword !== password);
 
-} while (accepted == true);
+alert("Senha Correta");
