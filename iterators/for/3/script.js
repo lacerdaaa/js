@@ -21,11 +21,11 @@ console.log(`to the population of country A to exceed the population of country 
 
 const growth = (population, rate) => population * rate;
 
-let countryA = 80000;
-let growthRateA = 1.03; 
+let countryA = 100;
+let growthRateA = 2; 
 
-let countryB = 200000;
-let growthRateB = 1.015; 
+let countryB = 1000;
+let growthRateB = 1; 
 
 let years = 0;
 
