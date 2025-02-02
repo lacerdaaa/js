@@ -10,11 +10,12 @@ let growthRateB;
 const increase = (population, growth) => population * growth;
 
 let option;
+let format;
 
 do {
     populationA = Number(prompt("Digite a população do país A:"));
     growthRateA = 1 + Number(prompt("Taxa de crescimento anual do país A (em decimal, por exemplo, 0.03 para 3%):"));
-    
+
     populationB = Number(prompt("Digite a população do país B:"));
     growthRateB = 1 + Number(prompt("Taxa de crescimento anual do país B (em decimal, por exemplo, 0.015 para 1.5%):"));
 
@@ -27,6 +28,6 @@ do {
 
     alert(`Serão necessários ${years} anos para que a população do país A ultrapasse ou iguale a população do país B.`);
     option = prompt("Deseja continuar? (Digite 'n' para sair)");
-    let format = option.toLowerCase()
+    format = option.toLowerCase()
 
-} while (format !== 'n' || format !== 'n');
+} while (format !== 'n');
