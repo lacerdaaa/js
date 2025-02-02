@@ -9,23 +9,19 @@ let person = {
 
 let steps = 1
 
-for(let l in person) {
+for(let data in person) {
     console.log(`${steps++} posicao` )
-    console.log(l)
+    console.log(data)
     //para acessar as PROPRIEDADES
-    console.log(person[l])
-
-
+    console.log(person[data])
 }
 
 let array = ['junior', 'luana', 'lais', 'bia']
 
 steps = 1
+
 for( let name in array) {
     console.log(`${steps++} posicao` )
     console.log(name)
     console.log(array[name])
 }
-
-
-console.log('FIM !!!!!!!!!!!!!!!!')
