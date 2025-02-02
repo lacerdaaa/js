@@ -2,7 +2,17 @@
 // correta e, caso não esteja, solicite novamente a senha. Se a senha entrada for a correta, deverá ser
 // apresentada a mensagem “Senha Correta”, caso contrário, “Senha Incorreta”. 
 
-let password = prompt("Crie uma senha de 4 números inteiros");
+function isFourDigitNumber(password) {
+    return /^\d{4}$/.test(password);
+}
+
+let password;
+do {
+    password = prompt("Crie uma senha de 4 números inteiros");
+    if (!isFourDigitNumber(password)) {
+        alert("A senha deve ter exatamente quatro dígitos inteiros");
+    }
+} while (!isFourDigitNumber(password));
 
 let checkpassword;
 do {
