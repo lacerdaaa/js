@@ -9,8 +9,9 @@ class Animal {
 }
 
 class Dog extends Animal{
-   
-    // Não vai ter nada aqui;
+    makeNoise() {
+        console.log("woof Woof Woof..")
+    }
 }
 
 let dog = new Dog('cachorro');
@@ -19,7 +20,9 @@ dog.makeNoise()
 
 class Cat extends Animal {
    
-    // Não há nada aqui
+    makeNoise() {
+        console.log("Miau Miaui Miau")
+    }
 }
 
 const cat = new Cat('Xaninha')
