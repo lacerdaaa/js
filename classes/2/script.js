@@ -29,7 +29,7 @@ class BankAccount {
 class Bank {
     constructor() { }
 
-    transference(fromAccount, toAccount, amount) {
+    static transference(fromAccount, toAccount, amount) {
         if (fromAccount.balance >= amount && amount > 0) {
             toAccount.balance += amount;
             fromAccount.balance -= amount;
@@ -42,11 +42,20 @@ class Bank {
     }
 }
 
-const account1 = new BankAccount(123, 'John Doe', 1000);
-const account2 = new BankAccount(456, 'Jane Smith', 500);
-
-account1.deposit(200);
-account1.withdraw(150);
-
+const account1 = new BankAccount(123, 'lacerda', 1000);
+const account2 = new BankAccount(456, 'sophia', 500);
 const bank = new Bank();
+
+try {
+    
+account1.deposit(501);
+account1.withdraw(143);
+
 bank.transference(account1, account2, 300);
+bank.transference(account2, account1, 500)
+bank.transference
+
+} catch (error) {
+    console.log(error)
+}
+
